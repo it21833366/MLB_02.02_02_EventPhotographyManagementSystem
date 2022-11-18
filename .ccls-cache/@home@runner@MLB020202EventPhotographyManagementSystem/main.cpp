@@ -1,6 +1,6 @@
 #include <iostream>
-#include<cstring>
-#include "RegisterdUse.h"
+#include <cstring>
+#include "RegisterdUser.h"
 
 using namespace std;
 
@@ -9,7 +9,7 @@ int main() {
 	//create registerd user object
 	RegisterdUser* reguser[2];
 	reguser[0] = new RegisterdUser();
-	reguser[1] = new RegisterdUser("smanali","samanali@gmail.com","no97/5,galle","1999/10/12","samanali@99","Sam@991012");
+	reguser[1] = new RegisterdUser("smanali","samanali@gmail.com","no97/5,galle","1999/10/12","samanali@99","Sam@991012",2);
 	
 	//acces method in Registerd user class
 	reguser[0]->getUsername();
@@ -22,7 +22,7 @@ int main() {
 	
 	
 	//clear dynamic memory space after complete the process 
-	delete reguser[0]
+	delete reguser[0];
 	delete reguser[1];
 
   
